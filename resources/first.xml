@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--Должен быть единственный root-элемент,
+в который поместится вся информация-->
+<request id="25">
+    <start-row>
+        <method>GET</method>
+        <url>www.google.com</url>
+        <version>1.1</version>
+    </start-row>
+
+    <headers>
+        <!-- можно и так -->
+<!--        <header name="content-type" value="text/html"></header>-->
+<!--        <header name="accept" value="application/json"></header>-->
+        <header>
+            <name>content-type</name>
+            <value>text/html</value>
+        </header>
+        <header>
+            <name>accept</name>
+            <value>application/json</value>
+        </header>
+    </headers>
+    <body type="text/plain"/>
+</request>
